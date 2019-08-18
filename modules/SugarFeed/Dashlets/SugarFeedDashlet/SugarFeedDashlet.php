@@ -268,7 +268,7 @@ class SugarFeedDashlet extends DashletGeneric
             global $dictionary;
             $all_modules = array_merge($regular_modules,$owner_modules);
             if(!is_admin($GLOBALS['current_user']) && count($all_modules) > 0)
-            {
+            {   $securitygroup_where = "" ;
                 $first = true;
                 foreach($all_modules as $module)
                 {
